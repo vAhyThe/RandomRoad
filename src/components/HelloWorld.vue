@@ -2,14 +2,22 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <forward />
+    <left />
+    <right />
   </div>
 </template>
 
 <script>
 import Forward from "./forward";
+import Left from "@/components/left";
+import Right from "@/components/right";
 export default {
   name: "HelloWorld",
-  components: { Forward },
+  components: {
+    Right,
+    Left,
+    Forward,
+  },
   props: {
     msg: String,
   },
